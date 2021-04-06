@@ -32,17 +32,50 @@
             <div class="panel panel-default">
               <div class="panel-heading">Filter Search</div>
               <div class="panel-body">
+
                 <form>
                   <div class="form-group">
                     <ul class="list-group" id="filters">
+
                       <li class="filter list-group-item">
                         <label for="date">Enter a Date</label>
                         <input class="form-control" id="datetime" type="text" placeholder="1/11/2011">
                       </li>
+
+                      <li class="filter list-group-item">
+                        <label for="city">Enter City Name</label>
+                        <input class="form-control" id="city" type="text" placeholder="Philadelphia">
+                      </li>
+
+                      <li class="filter list-group-item">
+                        <label for="state">Select a State</label>
+                        <select class="form-control" id="state">
+                          <option>select item</option>
+                        </select>
+                      </li>
+
+                      <li class="filter list-group-item">
+                        <label for="country">Select a country</label>
+                        <select class="form-control" id="country">
+                          <option>select item</option>
+                        </select>
+                      </li>
+
+                      <li class="filter list-group-item">
+                        <label for="shape">Select a Shape</label>
+                        <select class="form-control" id="shape">
+                          <option>select item</option>
+                        </select>
+                      </li>
+
                     </ul>
+
                   </div>
                   <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
+                  <button id="clear-btn" type="button" class="btn btn-default">Clear Filters</button>
+
                 </form>
+
               </div>
             </div>
           </aside>
