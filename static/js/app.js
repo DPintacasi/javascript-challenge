@@ -28,7 +28,15 @@ function buildTable(data) {
     );
 
     // log total number of rows in table
-    console.log(`Table contains ${count} rows`);
+    if (count === 0){
+        console.log("No data was found for your selection");
+    }
+    else if (count === 1){
+        console.log("Table contains 1 row");
+    }
+    else{
+        console.log(`Table contains ${count} rows`)
+    };
 };
 
 buildTable(tableData);
